@@ -27,6 +27,7 @@ public class ProductService {
 
     public List<ProductResponse> getAllProducts() {
         List<Product> products = productRepository.findAll();
+        log.info("Fetching the products ....");
         return products.stream().map(this::mapToProductResponse).toList();
     }
 

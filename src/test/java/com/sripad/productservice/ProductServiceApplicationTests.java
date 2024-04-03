@@ -1,6 +1,5 @@
 package com.sripad.productservice;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sripad.productservice.dto.ProductRequest;
 import com.sripad.productservice.model.Product;
@@ -91,7 +90,5 @@ class ProductServiceApplicationTests {
 				.price(BigDecimal.valueOf(price))
 				.build();
 		return productRequest;
-
-
 	}
 }
